@@ -1,0 +1,466 @@
+:root {
+  --white: #fef8f6;
+  --light-pastel-pink: #fae5df;
+  --pastel-pink: #f5cac2;
+  --coral: #ed7966;
+  --purple: #303179;
+  --dark-purple: #141850;
+  --black-purple: #05082e;
+}
+
+/* Import Campton font */
+
+@font-face {
+  font-family: "Campton Book";
+  src: url("../../public/fonts/campton/Campton-Book.eot");
+  src: local("Campton Book"), local("Campton-Book"),
+    url("../../public/fonts/campton/Campton-Book.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-Book.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-Book.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-Light.eot");
+  src: local("Campton Light"), local("Campton-Light"),
+    url("../../public/fonts/campton/Campton-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-Light.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-Light.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton Book";
+  src: url("../../public/fonts/campton/Campton-BookItalic.eot");
+  src: local("Campton Book Italic"), local("Campton-BookItalic"),
+    url("../../public/fonts/campton/Campton-BookItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-BookItalic.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-BookItalic.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-BookItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-Medium.eot");
+  src: local("Campton Medium"), local("Campton-Medium"),
+    url("../../public/fonts/campton/Campton-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-Medium.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-Medium.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-ExtraBold.eot");
+  src: local("Campton ExtraBold"), local("Campton-ExtraBold"),
+    url("../../public/fonts/campton/Campton-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-ExtraBold.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-ExtraBold.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-ThinItalic.eot");
+  src: local("Campton Thin Italic"), local("Campton-ThinItalic"),
+    url("../../public/fonts/campton/Campton-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-ThinItalic.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-ThinItalic.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-ExtraLightItalic.eot");
+  src: local("Campton ExtraLight Italic"), local("Campton-ExtraLightItalic"),
+    url("../../public/fonts/campton/Campton-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-ExtraLightItalic.woff2")
+      format("woff2"),
+    url("../../public/fonts/campton/Campton-ExtraLightItalic.woff")
+      format("woff"),
+    url("../../public/fonts/campton/Campton-ExtraLightItalic.ttf")
+      format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-Black.eot");
+  src: local("Campton Black"), local("Campton-Black"),
+    url("../../public/fonts/campton/Campton-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-Black.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-Black.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-MediumItalic.eot");
+  src: local("Campton Medium Italic"), local("Campton-MediumItalic"),
+    url("../../public/fonts/campton/Campton-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-MediumItalic.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-MediumItalic.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-MediumItalic.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-SemiBold.eot");
+  src: local("Campton SemiBold"), local("Campton-SemiBold"),
+    url("../../public/fonts/campton/Campton-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-SemiBold.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-SemiBold.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton Book";
+  src: url("../../public/fonts/campton/Campton-BoldItalic.eot");
+  src: local("Campton Bold Italic"), local("Campton-BoldItalic"),
+    url("../../public/fonts/campton/Campton-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-BoldItalic.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-BoldItalic.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-BlackItalic.eot");
+  src: local("Campton Black Italic"), local("Campton-BlackItalic"),
+    url("../../public/fonts/campton/Campton-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-BlackItalic.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-BlackItalic.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-SemiBoldItalic.eot");
+  src: local("Campton SemiBold Italic"), local("Campton-SemiBoldItalic"),
+    url("../../public/fonts/campton/Campton-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-SemiBoldItalic.woff2")
+      format("woff2"),
+    url("../../public/fonts/campton/Campton-SemiBoldItalic.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-SemiBoldItalic.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Campton Book";
+  src: url("../../public/fonts/campton/Campton-Bold.eot");
+  src: local("Campton Bold"), local("Campton-Bold"),
+    url("../../public/fonts/campton/Campton-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-Bold.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-Bold.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-LightItalic.eot");
+  src: local("Campton Light Italic"), local("Campton-LightItalic"),
+    url("../../public/fonts/campton/Campton-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-LightItalic.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-LightItalic.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-ExtraLight.eot");
+  src: local("Campton ExtraLight"), local("Campton-ExtraLight"),
+    url("../../public/fonts/campton/Campton-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-ExtraLight.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-ExtraLight.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-Thin.eot");
+  src: local("Campton Thin"), local("Campton-Thin"),
+    url("../../public/fonts/campton/Campton-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-Thin.woff2") format("woff2"),
+    url("../../public/fonts/campton/Campton-Thin.woff") format("woff"),
+    url("../../public/fonts/campton/Campton-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../../public/fonts/campton/Campton-ExtraBoldItalic.eot");
+  src: local("Campton ExtraBold Italic"), local("Campton-ExtraBoldItalic"),
+    url("../../public/fonts/campton/Campton-ExtraBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/campton/Campton-ExtraBoldItalic.woff2")
+      format("woff2"),
+    url("../../public/fonts/campton/Campton-ExtraBoldItalic.woff")
+      format("woff"),
+    url("../../public/fonts/campton/Campton-ExtraBoldItalic.ttf")
+      format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Import Cooper LT BT font */
+
+@font-face {
+  font-family: "Cooper Lt BT";
+  src: url("../../public/fonts/CooperLtBT/CooperBoldBT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cooper Lt BT";
+  src: url("../../public/fonts/CooperLtBT/CooperBoldItalicBT.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cooper Lt BT";
+  src: url("../../public/fonts/CooperLtBT/CooperLightBT.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cooper Lt BT";
+  src: url("../../public/fonts/CooperLtBT/CooperLightItalicBT.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cooper Lt BT";
+  src: url("../../public/fonts/CooperLtBT/CooperLtBTBold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cooper Lt BT";
+  src: url("../../public/fonts/CooperLtBT/CooperLtBTBoldItalic.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cooper Lt BT";
+}
+
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Campton Book";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+p {
+  color: var(--black-purple);
+}
+
+.noise {
+  position: relative;
+  z-index: 1;
+}
+
+.noise:before,
+.body-noise:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(data:image/png;base64,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);
+}
+
+.hero-bg-shape-one::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -75px;
+  right: 0;
+  width: 290px;
+  background: linear-gradient(225deg, rgba(0, 0, 255, 0.33), rgba(0, 0, 0, 0)),
+    linear-gradient(70deg, rgba(243, 156, 156, 1), rgba(255, 0, 0, 0));
+  filter: blur(80px);
+}
+
+.hero-bg-shape-two::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+  top: -220px;
+  bottom: 0;
+  right: -190px;
+  width: 400px;
+  height: 400px;
+  filter: blur(80px);
+  background: linear-gradient(225deg, rgba(0, 0, 255, 0.33), rgba(0, 0, 0, 0)),
+    linear-gradient(70deg, rgba(243, 156, 156, 1), rgba(255, 0, 0, 0));
+}
+
+.hero-bg-shape-three::before {
+  content: "";
+  position: absolute;
+  border-radius: 65% 35% 67% 33% / 81% 73% 27% 19%;
+  z-index: -1;
+  bottom: -190px;
+  right: -190px;
+  width: 313px;
+  height: 284px;
+  filter: blur(148px);
+  background: linear-gradient(225deg, rgba(0, 0, 255, 0.33), rgba(0, 0, 0, 0)),
+    linear-gradient(70deg, rgba(243, 156, 156, 1), rgba(255, 0, 0, 0));
+}
+
+.hero-bg-shape-four::before {
+  content: "";
+  position: absolute;
+  border-radius: 77% 23% 67% 33% / 41% 36% 64% 59%;
+  z-index: -1;
+  top: 250px;
+  left: 0;
+  width: 220px;
+  height: 200px;
+  filter: blur(80px);
+  background: linear-gradient(225deg, rgba(0, 0, 255, 0.33), rgba(0, 0, 0, 0)),
+    linear-gradient(70deg, rgba(243, 156, 156, 1), rgba(255, 0, 0, 0));
+}
+
+.hero-bg-shape-five::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+  bottom: -65px;
+  right: -100px;
+  width: 220px;
+  height: 200px;
+  filter: blur(80px);
+  background: linear-gradient(225deg, rgba(0, 0, 255, 0.33), rgba(0, 0, 0, 0)),
+    linear-gradient(70deg, rgba(243, 156, 156, 1), rgba(255, 0, 0, 0));
+}
+
+.border-box {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  /* border: 2px solid rgba(0, 0, 255, 0.33); */
+  border-radius: 77% 23% 67% 33% / 41% 36% 64% 59% !important;
+  transition:color .2s ease-out, background 1s ease-in;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+}
+
+.border-box p {
+  color: var(--dark-purple);
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 18px;
+}
+
+.border-box:hover p {
+  z-index: 9;
+}
+
+.border-box::before {
+  border-radius: 77% 23% 67% 33% / 41% 36% 64% 59% !important;
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  opacity: 0;
+  z-index: 0;
+  filter: blur(65px);
+  transform: rotate(360deg);
+  background: linear-gradient(225deg, rgba(0, 0, 255, 0.33), rgba(0, 0, 0, 0)),
+    linear-gradient(70deg, rgba(243, 156, 156, 1), rgba(255, 0, 0, 0));
+}
+
+.bg-gradiant {
+  background: 
+	linear-gradient(70deg, rgba(0,0,255,0.3), rgba(201,170,170,0)),
+	linear-gradient(225deg, rgba(196,0,255,0.33), rgba(0,0,255,0));
+}
+
+.border-box:hover::before{
+  opacity: 1;
+}
