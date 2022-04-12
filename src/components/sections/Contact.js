@@ -1,4 +1,3 @@
-import Link from "next/link";
 import HookForm from "../../hook/HookForm";
 import {
   Container,
@@ -18,6 +17,7 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
+  Link
 } from "@chakra-ui/react";
 import {
   MdPhone,
@@ -28,14 +28,7 @@ import {
 } from "react-icons/md";
 import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
 
-export default function Contact({
-  title,
-  subtitle,
-  image,
-  ctaLink,
-  ctaText,
-  ...rest
-}) {
+export default function Contact() {
   return (
     <Container
       id="contacto"
@@ -143,6 +136,7 @@ export default function Contact({
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement
                             pointerEvents="none"
+                            // eslint-disable-next-line react/no-children-prop
                             children={<BsPerson color="gray.800" />}
                           />
                           <Input type="text" size="md" />
@@ -153,6 +147,7 @@ export default function Contact({
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement
                             pointerEvents="none"
+                            // eslint-disable-next-line react/no-children-prop
                             children={<MdOutlineEmail color="gray.800" />}
                           />
                           <Input type="text" size="md" />

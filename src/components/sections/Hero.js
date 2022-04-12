@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import Image from "next/image";
-import Link from "next/link";
-import { Box, Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Stack, Text, Link } from "@chakra-ui/react";
 import HeroImage from "../../../public/assets/busy-project-manager-overwhelmed-by-work.svg";
 
 export default function Hero({
@@ -61,7 +60,7 @@ export default function Hero({
           type="button"
           href="#contact"
           borderRadius="8px"
-          style={{"margin-top": "24px", "backgroundColor": "#141850", "color": "#FEF8F6", "padding": "10px 20px"}}
+          style={{"marginTop": "24px", "backgroundColor": "#141850", "color": "#FEF8F6", "padding": "10px 20px"}}
           lineHeight="1"
           width="280px"
           fontSize={18}

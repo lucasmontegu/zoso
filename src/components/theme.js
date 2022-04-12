@@ -31,7 +31,4 @@ const overrides = {
 }
 
 // declare a variable for our theme and pass our overrides in the e`xtendTheme` method from chakra
-const customTheme = extendTheme(overrides)
-
-// export our theme
-export default customTheme
+export const customTheme = extendTheme(overrides)
