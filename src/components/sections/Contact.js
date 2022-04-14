@@ -41,20 +41,23 @@ export default function Contact() {
       overflow="hidden"
       mb={16}
     >
-      <Flex>
+      <Flex width="100%">
         <Box
           className="bg-gradiant"
+          maxW="full"
+          width="100%"
           color="white"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
           p={{ sm: 5, md: 5, lg: 16 }}
+          as="div"
         >
-          <Box p={4}>
-            <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
-              <WrapItem>
+          <Box p={4} as="div">
+            <Wrap as="div" w="100%" spacing={{ base: 20, sm: 3, md: 5, lg: 20 }} justifyContent="space-between" >
+              <WrapItem as="div" w={{ base: "100%", md: "30%"}}>
                 <Box>
-                  <Heading>Contacto</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="brand.dark">
+                  <Heading color="#05082e">Contacto</Heading>
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="#05082e">
                     Cuentanos como podemos ayudarte
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
@@ -64,9 +67,9 @@ export default function Contact() {
                         height="48px"
                         width="200px"
                         variant="ghost"
-                        color="#DCE2FF"
-                        _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdPhone color="#1970F1" size="20px" />}
+                        color="white"
+                        _hover={{ border: "2px solid white" }}
+                        leftIcon={<MdPhone color="white" size="20px" />}
                       >
                         +91-988888888
                       </Button>
@@ -75,9 +78,9 @@ export default function Contact() {
                         height="48px"
                         width="200px"
                         variant="ghost"
-                        color="#DCE2FF"
-                        _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdEmail color="#1970F1" size="20px" />}
+                        color="white"
+                        _hover={{ border: "2px solid white" }}
+                        leftIcon={<MdEmail color="white" size="20px" />}
                       >
                         hello@abc.com
                       </Button>
@@ -86,9 +89,9 @@ export default function Contact() {
                         height="48px"
                         width="200px"
                         variant="ghost"
-                        color="#DCE2FF"
-                        _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
+                        color="white"
+                        _hover={{ border: "2px solid white" }}
+                        leftIcon={<MdLocationOn color="white" size="20px" />}
                       >
                         Karnavati, India
                       </Button>
@@ -127,13 +130,13 @@ export default function Contact() {
                     </HStack> */}
                 </Box>
               </WrapItem>
-              <WrapItem>
-                <Box bg="white" borderRadius="lg">
+              <WrapItem as="div" w={{ base: "100%", md: "50%"}}>
+                <Box bg="white" borderRadius="lg" w="100%">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
                       <FormControl id="name">
                         <FormLabel>Nombre y Apellido</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
+                        <InputGroup borderColor="#05082e">
                           <InputLeftElement
                             pointerEvents="none"
                             // eslint-disable-next-line react/no-children-prop
@@ -144,7 +147,7 @@ export default function Contact() {
                       </FormControl>
                       <FormControl id="name">
                         <FormLabel>Mail</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
+                        <InputGroup borderColor="#05082e">
                           <InputLeftElement
                             pointerEvents="none"
                             // eslint-disable-next-line react/no-children-prop
@@ -166,7 +169,7 @@ export default function Contact() {
                       <FormControl id="name" float="right">
                         <Button
                           variant="solid"
-                          bg="#303179"
+                          bg="#05082e"
                           color="white"
                           _hover={{}}
                         >

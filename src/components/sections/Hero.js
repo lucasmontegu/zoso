@@ -60,9 +60,9 @@ export default function Hero({
           type="button"
           href="#contact"
           borderRadius="8px"
-          style={{"marginTop": "24px", "backgroundColor": "#141850", "color": "#FEF8F6", "padding": "10px 20px"}}
+          style={{"marginTop": "24px", "backgroundColor": "#141850", "color": "#FEF8F6", "padding": "28px 28px"}}
           lineHeight="1"
-          width="280px"
+          width="320px"
           fontSize={18}
           heigth="32px"
           size="md"

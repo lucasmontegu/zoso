@@ -30,7 +30,7 @@ const Header = (props) => {
           alt="Zoso Marketing Logo"
         />
       </Flex>
-
+      
       <Box display={{ base: "block", md: "none" }} onClick={toggleMenu}>
         {show ? <BiX color='#05082E' size={24} /> : <BiMenuAltRight color='#05082E' size={24}/>}
       </Box>
@@ -50,6 +50,9 @@ const Header = (props) => {
           <MenuItems to="#contacto">Contacto </MenuItems>
         </Flex>
       </Box>
+
+      <Box display={{ base: "none", md: "block" }}></Box>
+
     </Flex>
   )
 }
